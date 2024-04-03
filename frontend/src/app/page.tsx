@@ -14,8 +14,19 @@ import StwitterLayout from "./components/Layout/stwitterLayout";
 import { Stweet } from "../../gql/graphql";
 
 
+// interface Stweet {
+//   id: string;
+//   content: string;
+//   imageURL: string;
+//   author: {
+//     firstName: string;
+//     lastName: string;
+//     profileImageURL: string;
+//   };
+// }
+
 interface HomeProps {
-  stweets?: Stweet[];
+  stweets?: Stweet[] | never;
 }
 
 export default function Home(props: HomeProps) {
